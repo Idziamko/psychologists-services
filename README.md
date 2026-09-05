@@ -21,7 +21,7 @@ Live demo: https://idziamko.github.io/psychologists-services/
 
 ## Tech stack
 
-- React 18 and Vite 6
+- React 18 and Vite 6 with TypeScript
 - React Router 6
 - Firebase Authentication and Realtime Database
 - react-hook-form and yup
@@ -62,7 +62,7 @@ psychologists collection.
 | Command          | Description                |
 | ---------------- | -------------------------- |
 | `npm run dev`    | start the dev server       |
-| `npm run build`  | build for production       |
+| `npm run build`  | type-check and build for production |
 | `npm run preview`| preview the built app      |
 | `npm run lint`   | run ESLint                 |
 | `npm run format` | format the source with Prettier |
@@ -80,5 +80,6 @@ src/
   pages/        route level components
   services/     Firebase requests
   styles/       design tokens and global styles
+  types/        shared TypeScript types
   utils/        validation schemas and helpers
 ```

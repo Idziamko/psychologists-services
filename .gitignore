@@ -23,3 +23,5 @@ figma_cache
 docs
 .claude
 firebase-config.txt
+node_modules/.tmp
+tsconfig.node.tsbuildinfo
