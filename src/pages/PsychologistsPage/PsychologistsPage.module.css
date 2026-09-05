@@ -1,0 +1,35 @@
+.section {
+  flex-grow: 1;
+  padding: 64px 0 100px;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--container-padding) * 2);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.list {
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 1279px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 24px 0 60px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .list {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  min-width: 176px;
+  margin: 64px auto 0;
+  padding: 14px 48px;
+  border-radius: var(--radius-pill);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  transition: background-color 250ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--color-accent-hover);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    margin-top: 32px;
+  }
+}

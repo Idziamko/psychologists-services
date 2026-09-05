@@ -1,0 +1,249 @@
+.card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: var(--radius-card);
+  background-color: var(--color-light);
+}
+
+.avatarFrame {
+  position: relative;
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border: 2px solid var(--color-accent-soft);
+  border-radius: var(--radius-avatar-frame);
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-avatar);
+  object-fit: cover;
+  background-color: var(--color-placeholder);
+}
+
+.online {
+  position: absolute;
+  top: 7px;
+  left: 90px;
+  color: var(--color-price);
+}
+
+.content {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.headText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-grey);
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-dark);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-dark);
+  white-space: nowrap;
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background-color: var(--color-dark-20);
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-dark);
+  white-space: nowrap;
+}
+
+.priceValue {
+  color: var(--color-price);
+}
+
+.heart {
+  display: flex;
+  margin-left: 4px;
+  color: var(--color-dark);
+  transition: color 250ms ease;
+}
+
+.heart:hover,
+.heart:focus-visible {
+  color: var(--color-accent);
+}
+
+.liked {
+  color: var(--color-accent);
+}
+
+.chips {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: var(--radius-card);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-grey);
+  background-color: var(--color-surface);
+}
+
+.chipValue {
+  color: var(--color-dark);
+}
+
+.about {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-dark-50);
+}
+
+.readMore {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-dark);
+  text-decoration: underline;
+  transition: color 250ms ease;
+}
+
+.readMore:hover,
+.readMore:focus-visible {
+  color: var(--color-accent);
+}
+
+.reviews {
+  margin-top: 28px;
+}
+
+.appointment {
+  margin-top: 40px;
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  transition: background-color 250ms ease;
+}
+
+.appointment:hover,
+.appointment:focus-visible {
+  background-color: var(--color-accent-hover);
+}
+
+@media screen and (max-width: 1023px) {
+  .head {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .meta {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: var(--radius-block);
+  }
+
+  .avatarFrame {
+    width: 96px;
+    height: 96px;
+    padding: 8px;
+  }
+
+  .avatar {
+    width: 76px;
+    height: 76px;
+  }
+
+  .online {
+    left: 70px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .meta {
+    gap: 12px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .chip {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .about,
+  .readMore {
+    margin-top: 16px;
+  }
+
+  .appointment {
+    width: 100%;
+    margin-top: 24px;
+  }
+}

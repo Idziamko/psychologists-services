@@ -1,0 +1,58 @@
+.psychologist {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-avatar);
+  object-fit: cover;
+  background-color: var(--color-placeholder);
+}
+
+.psychologistText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.caption {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--color-grey);
+}
+
+.psychologistName {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-dark);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.form button[type='submit'] {
+  margin-top: 24px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media screen and (max-width: 479px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

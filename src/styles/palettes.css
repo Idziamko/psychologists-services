@@ -1,0 +1,9 @@
+:root[data-palette='green'] {
+  --color-accent-rgb: 84, 190, 150;
+  --color-accent-hover: #38a67c;
+}
+
+:root[data-palette='orange'] {
+  --color-accent-rgb: 252, 131, 44;
+  --color-accent-hover: #e56c15;
+}
